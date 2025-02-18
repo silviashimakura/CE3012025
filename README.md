@@ -1,2 +1,2 @@
 # estbas.github.io
-Curso de Estatística Básica
+Material de Estatística Básica
