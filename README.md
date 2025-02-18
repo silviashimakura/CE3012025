@@ -1,2 +1,2 @@
-# estbas.github.io
+# estbas
 Material de Estatística Básica
