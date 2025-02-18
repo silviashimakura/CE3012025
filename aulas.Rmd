@@ -41,17 +41,17 @@ output:
 
 **Semana 1**
 
- - 10/03/25 (seg) - **INÍCIO DO PERÍODO LETIVO/RECEPÇÃO**
- - 11/03/25 (ter) - [Orientações iniciais e Introdução.](slides/100-introducao.pdf)
- - 13/03/25 (qui) - [Revisão matemática.](slides/000-revisao-matematica.pdf)
- - 14/03/25 (sex) - Revisão matemática.
+ - 10/03/25 (seg) - **RECEPÇÃO**
+ - 11/03/25 (ter) - **RECEPÇÃO**
+ - 13/03/25 (qui) - **RECEPÇÃO**
+ - 14/03/25 (sex) - [Orientações iniciais e Introdução.](slides/100-introducao.pdf)
  
 **Semana 2**
 
- - 17/03/25 (seg) - Revisão matemática.
- - 18/03/25 (ter) - [Dados e amostragem.](slides/101-dados-e-amostragem.pdf)
+ - 17/03/25 (seg) - [Revisão matemática.](slides/000-revisao-matematica.pdf)
+ - 18/03/25 (ter) - Revisão matemática.
  - 20/03/25 (qui) - Introdução ao R ([slides](slides/000-introducao-ao-r.pdf), [script](praticas-R/000-ambientacao-ao-R.R))
- - 21/03/25 (sex) - [Atividade prática: tipos de variáveis, tipos de estudos e amostragem](praticas-aula/100-variaveis-estudos-amostragem-solucao.pdf).
+ - 21/03/25 (sex) - [Dados e amostragem.](slides/101-dados-e-amostragem.pdf) [Atividade prática: tipos de variáveis, tipos de estudos e amostragem](praticas-aula/100-variaveis-estudos-amostragem-solucao.pdf).
     
 **Semana 3**
 
