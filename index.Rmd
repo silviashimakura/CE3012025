@@ -85,8 +85,8 @@ output:
   - Prédio do setor de ciências exatas (PA).
   - Departamento de Estatística (2º andar).
   - Silvia: sala 203.
-  - Amanda: sala xxx.
-  - Paulo: sala xxx.
+  - Amanda: sala 223.
+  - Paulo: sala LEG.
 
 **Monitoria**:
 
@@ -96,7 +96,7 @@ output:
     - Centro politécnico.
     - Prédio do setor de ciências exatas (PA).
     - Departamento de Estatística (2º andar).
-    - Sala de monitoria (217) ou LEG (232).
+    - Sala de monitoria (217).
 
 ---
 
