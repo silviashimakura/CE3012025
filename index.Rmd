@@ -140,7 +140,7 @@ As atividades avaliativas serão em dois formatos:
 
 ## Programa e objetivos
 
-O objetivo da disciplina é capacitar os alunos em conceitos básicos de Estatística que permitam a interpretação crítica de resultados de análises e procedimentos estatísticos, bem como a execução de procedimentos e análises estatística básicas. 
+O objetivo da disciplina é capacitar os alunos em conceitos básicos de Estatística que permitam a interpretação crítica de resultados de análises e procedimentos estatísticos, bem como a execução de procedimentos e análises estatísticas básicas. 
 
 O curso compreende três grandes tópicos:
 
