@@ -47,7 +47,7 @@ output:
 
   - Segunda, 20:45 - 22:15, PA-08.
   - Terça, 19:00 - 20:30, PA-08.
-  - Quinta, 20:45 - 22:15, PA-08.
+  - Quinta, 20:45 - 22:15, PA-08 ou Lab 1-2 Dinf.
   - Sexta, 19:00 - 20:30, PA-08.
 
 **Horários de atendimento**: a combinar.
