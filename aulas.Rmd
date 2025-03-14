@@ -42,6 +42,7 @@ output:
 **Semana 1**
 
  - **Semana de recepção aos calouros**
+ - 13/03/25 (qui) - [Apresentação do curso (Prof. Lineu).](slides/100-introducao.pdf)
 
 **Semana 2**
 
