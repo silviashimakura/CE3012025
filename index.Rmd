@@ -90,8 +90,8 @@ output:
 
 **Monitoria**:
 
- - Monitor: a definir.
- - Dias e horários de atendimento: a definir.
+ - Monitor: Leonardo Levandowski Lobbe
+ - Dias e horários de atendimento: seg, qua, qui e sex das 17:00 às 18:30.
  - Local: 
     - Centro politécnico.
     - Prédio do setor de ciências exatas (PA).
