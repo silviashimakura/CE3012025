@@ -49,11 +49,11 @@ output:
  - 17/03/25 (seg) - [Revisão matemática.](slides/000-revisao-matematica.pdf)
  - 18/03/25 (ter) - Revisão matemática.
  - 20/03/25 (qui) - Introdução ao R ([slides](slides/000-introducao-ao-r.pdf), [script](praticas-R/000-ambientacao-ao-R.R))
- - 21/03/25 (sex) - [Dados e amostragem.](slides/101-dados-e-amostragem.pdf) [Atividade prática: tipos de variáveis, tipos de estudos e amostragem](praticas-aula/100-variaveis-estudos-amostragem-enunciados.pdf).
+ - 21/03/25 (sex) - Revisão matemática.
     
 **Semana 3**
 
- - 24/03/25 (seg) - 
+ - 24/03/25 (seg) - [Dados e amostragem.](slides/101-dados-e-amostragem.pdf) [Atividade prática: tipos de variáveis, tipos de estudos e amostragem](praticas-aula/100-variaveis-estudos-amostragem-enunciados.pdf).
  - 25/03/25 (ter) - 
  - 27/03/25 (qui) - 
  - 28/03/25 (sex) - 
