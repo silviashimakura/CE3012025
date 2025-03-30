@@ -60,10 +60,10 @@ output:
     
 **Semana 4**
 
- - 31/03/25 (seg) - 
- - 01/04/25 (ter) - 
- - 03/04/25 (qui) - 
- - 04/04/25 (sex) - 
+ - 31/03/25 (seg) - [Resumos numéricos - medidas de posição.](slides/104-exploratoria-medidas-posicao.pdf)
+ - 01/04/25 (ter) - [Resumos numéricos - medidas de dispersão.](slides/105-exploratoria-medidas-dispersao.pdf)
+ - 03/04/25 (qui) - [Medidas de posição e dispersão no R.](praticas-R/101-medidas-uni.R)
+ - 04/04/25 (sex) - [Atividade prática: medidas de posição e dispersão](praticas-aula/102-medidas-posicao-dispersao-solucao.pdf).
     
 **Semana 5**
 
