@@ -55,7 +55,7 @@ output:
 
  - 24/03/25 (seg) - [Dados e amostragem.](slides/101-dados-e-amostragem.pdf) [Atividade prática: tipos de variáveis, tipos de estudos e amostragem](praticas-aula/100-variaveis-estudos-amostragem-enunciados.pdf).
  - 25/03/25 (ter) - [Gráficos e tabelas para variáveis qualitativas.](slides/102-exploratoria-quali-uni-tabelas-graficos.pdf) [Gráficos e tabelas para variáveis quantitativas.](slides/103-exploratoria-quant-uni-tabelas-graficos.pdf)
- - 27/03/25 (qui) - [Gráficos e tabelas no R.](praticas-R/100-graficos-tabelas-uni.R) [Exercícios](praticas-R/exercicios01ce301.html)
+ - 27/03/25 (qui) - [Gráficos e tabelas no R.](praticas-R/100-graficos-tabelas-uni.R) 
  - 28/03/25 (sex) - [Atividade prática: gráficos e tabelas](praticas-aula/101-tabelas-graficos-quali-quant-solucao.pdf).
     
 **Semana 4**
