@@ -23,6 +23,10 @@ navbar:
           icon: fa-arrow-right
           href: listas/000-matbas.pdf
 
+        - text: "Elementos de programação em R"
+          icon: fa-arrow-right
+          href: praticas-R/exercicios01ce301.html
+
         - text: "Análise exploratória"
           icon: fa-arrow-right
           href: listas/100-exercicios-exploratoria.pdf
