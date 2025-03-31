@@ -592,7 +592,7 @@ pre code {
 </div>
 
 
-<p><em><strong>Última atualização: 28 de março, 2025 às 18:20.</strong></em></p>
+<p><em><strong>Última atualização: 31 de março, 2025 às 18:17.</strong></em></p>
 <div id="aritmética" class="section level1" number="1">
 <h1 number="1"><span class="header-section-number">1</span> Aritmética</h1>
 <div id="calcular-as-seguintes-expressões-no-r" class="section level2" number="1.1">
@@ -627,70 +627,138 @@ pre code {
 </div>
 <div id="somatórios-e-produtórios" class="section level1" number="2">
 <h1 number="2"><span class="header-section-number">2</span> Somatórios e produtórios</h1>
-<p>Sejam duas amostras de tamanho <span class="math inline">\(n = 5\)</span>: <span class="math inline">\(X = \{2,7,4,3,2\}\)</span> e <span class="math inline">\(Y = \{1,2,3,6,5\}\)</span>. Calcule:</p>
+<p>Sejam duas amostras de tamanho <span class="math inline">\(n = 5\)</span>: <span class="math inline">\(X = \{2,7,4,3,2\}\)</span> e <span class="math inline">\(Y = \{1,2,3,6,5\}\)</span>.</p>
+<div id="calcule" class="section level2" number="2.1">
+<h2 number="2.1"><span class="header-section-number">2.1</span> Calcule:</h2>
 <ol style="list-style-type: lower-alpha">
-<li><span class="math inline">\(\sum_{i=1}^5 x_i\)</span></li>
-<li><span class="math inline">\(\prod_{i=1}^5 x_i\)</span></li>
-<li><span class="math inline">\(\sum_{i=1}^5 x_i y_i\)</span></li>
+<li><span class="math inline">\(\sum_{i=1}^n x_i\)</span></li>
+<li><span class="math inline">\(\prod_{i=1}^n x_i\)</span></li>
+<li><span class="math inline">\(\sum_{i=1}^n x_i y_i\)</span></li>
 <li><span class="math inline">\(\prod_{i=2}^4 (x_i + y_i)\)</span></li>
-<li><span class="math inline">\(\sum_{i=1}^5 x_2\)</span></li>
+<li><span class="math inline">\(\sum_{i=1}^n x_2\)</span></li>
 </ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>X &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">7</span>,<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">2</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>Y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">5</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="kw">sum</span>(X)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="co"># [1] 18</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a><span class="kw">prod</span>(X)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a><span class="co"># [1] 336</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a><span class="kw">exp</span>(<span class="kw">sum</span>(<span class="kw">log</span>(X)))</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a><span class="co"># [1] 336</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a><span class="kw">sum</span>(X<span class="op">*</span>Y)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a><span class="co"># [1] 56</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a><span class="kw">prod</span>(X[<span class="dv">2</span><span class="op">:</span><span class="dv">4</span>]<span class="op">+</span>Y[<span class="dv">2</span><span class="op">:</span><span class="dv">4</span>])</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a><span class="co"># [1] 567</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a><span class="dv">5</span><span class="op">*</span>X[<span class="dv">2</span>]</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a><span class="co"># [1] 35</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>n &lt;-<span class="st"> </span><span class="dv">5</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>X &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">7</span>,<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">2</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>Y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">5</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="kw">sum</span>(X)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a><span class="co"># [1] 18</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a><span class="kw">prod</span>(X)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a><span class="co"># [1] 336</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a><span class="kw">exp</span>(<span class="kw">sum</span>(<span class="kw">log</span>(X)))</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a><span class="co"># [1] 336</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a><span class="kw">sum</span>(X<span class="op">*</span>Y)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a><span class="co"># [1] 56</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a><span class="kw">prod</span>(X[<span class="dv">2</span><span class="op">:</span><span class="dv">4</span>]<span class="op">+</span>Y[<span class="dv">2</span><span class="op">:</span><span class="dv">4</span>])</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a><span class="co"># [1] 567</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a>n<span class="op">*</span>X[<span class="dv">2</span>]</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true"></a><span class="co"># [1] 35</span></span></code></pre></div>
 <ol start="6" style="list-style-type: lower-alpha">
-<li><span class="math inline">\(\sum_{i=1}^5 x_i + y_{5-i+1}\)</span></li>
-<li><span class="math inline">\(\sum_{i=1}^5 i y_i\)</span></li>
-<li><span class="math inline">\(\prod_{i=1}^5 i\)</span></li>
-<li><span class="math inline">\(\prod_{i=1}^5 \frac{1}{i}\)</span></li>
-<li><span class="math inline">\(\prod_{i=1}^5 \frac{y_i^2}{i}\)</span></li>
-<li><span class="math inline">\(\sum_{i=1}^5 y_i\)</span></li>
-<li><span class="math inline">\(\sum_{i=1}^5 2 y_i + 4\)</span></li>
-<li><span class="math inline">\(\sum_{i=1}^5 \frac{x_i^2 - \frac{\left(\sum_{i=1}^5 x_i\right)^2}{n}}{5 - 1}\)</span></li>
-<li><span class="math inline">\(\frac{\sum_{i=1}^5 x_i y_i - \frac{\left(\sum_{i=1}^5 x_i\right)\left(\sum_{i=1}^5 y_i\right)}{n}}{\sqrt{\left[\sum_{i=1}^5 x_i^2 - \frac{\left(\sum_{i=1}^5 x_i\right)^2}{n}\right]\left[\sum_{i=1}^5 y_i^2 - \frac{\left(\sum_{i=1}^5 y_i\right)^2}{n}\right]}}\)</span></li>
+<li><span class="math inline">\(\sum_{i=1}^n x_i + y_{n-i+1}\)</span></li>
+<li><span class="math inline">\(\sum_{i=1}^n i y_i\)</span></li>
+<li><span class="math inline">\(\prod_{i=1}^n i\)</span></li>
+<li><span class="math inline">\(\prod_{i=1}^n \frac{1}{i}\)</span></li>
+<li><span class="math inline">\(\prod_{i=1}^n \frac{y_i^2}{i}\)</span></li>
+<li><span class="math inline">\(\sum_{i=2}^3 y_i\)</span></li>
+<li><span class="math inline">\(\sum_{i=1}^n 2 y_i + 4\)</span></li>
+<li><span class="math inline">\(\frac{\sum_{i=1}^n x_i^2 \; - \frac{\left(\sum_{i=1}^n x_i\right)^2}{n}}{n - 1}\)</span></li>
+<li><span class="math inline">\(\frac{\sum_{i=1}^n x_i y_i \; - \frac{\left(\sum_{i=1}^n x_i\right)\left(\sum_{i=1}^n y_i\right)}{n}}{\sqrt{\left[\sum_{i=1}^n x_i^2 \; - \frac{\left(\sum_{i=1}^n x_i\right)^2}{n}\right]\left[\sum_{i=1}^n y_i^2 \; - \frac{\left(\sum_{i=1}^n y_i\right)^2}{n}\right]}}\)</span></li>
+<li><span class="math inline">\(\sum_{i=1}^n \sum_{j=1}^n x_i + y_j\)</span></li>
+<li><span class="math inline">\(\frac{\sum_{i=1}^n (2i - n - 1) X_i^{(s)}}{(n-1) \sum_{j=1}^n X_i^{(s)}}\)</span> em que <span class="math inline">\(X^{s}\)</span> o vetor de valores de <span class="math inline">\(X\)</span> ordenados em ordem crescente.</li>
 </ol>
 </div>
-<div id="objetos-vetores" class="section level1" number="3">
-<h1 number="3"><span class="header-section-number">3</span> Objetos: vetores</h1>
+<div id="escreva-em-notação-de-somatório-eou-produtório-as-expressões-correspondentes-aos-comandos-a-seguir." class="section level2" number="2.2">
+<h2 number="2.2"><span class="header-section-number">2.2</span> Escreva em notação de somatório e/ou produtório as expressões correspondentes aos comandos a seguir.</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r fold-show"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="co">## a)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a><span class="kw">sum</span>(Y)<span class="op">/</span><span class="kw">sum</span>(X)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a><span class="co">## b)</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a><span class="kw">prod</span>(X<span class="op">/</span>Y)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true"></a><span class="co">## c)</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true"></a><span class="kw">prod</span>(X)<span class="op">/</span><span class="kw">prod</span>(Y)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true"></a><span class="co">## d)</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true"></a><span class="kw">sum</span>(<span class="dv">3</span><span class="op">:</span><span class="dv">5</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true"></a><span class="co">## e)</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true"></a><span class="kw">sum</span>(x[<span class="dv">3</span><span class="op">:</span><span class="dv">5</span>])</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true"></a><span class="co">## f)</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true"></a><span class="kw">sum</span>(x[<span class="dv">3</span><span class="op">:</span><span class="dv">5</span>])<span class="op">*</span><span class="kw">sum</span>(y[<span class="dv">3</span><span class="op">:</span><span class="dv">5</span>])</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true"></a><span class="co">## g)</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true"></a><span class="kw">sum</span>(x[<span class="dv">3</span><span class="op">:</span><span class="dv">5</span>]<span class="op">*</span>y[<span class="dv">3</span><span class="op">:</span><span class="dv">5</span>])</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true"></a><span class="co">## h)</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true"></a><span class="kw">sum</span>(y<span class="op">^</span>i)</span></code></pre></div>
+</div>
+</div>
+<div id="análise-combinatória" class="section level1" number="3">
+<h1 number="3"><span class="header-section-number">3</span> Análise combinatória</h1>
+<div id="examine-os-exemplos-a-seguir-extraídos-do-material-slides-do-curso." class="section level2" number="3.1">
+<h2 number="3.1"><span class="header-section-number">3.1</span> Examine os exemplos a seguir extraídos do material (<em>slides</em>) do curso.</h2>
+<ul>
+<li><span class="math inline">\(5! = 5 \times 4 \times 3 \times 2 \times 1 = 120\)</span></li>
+<li><span class="math inline">\(A_{10,4} = \frac{10!}{(10-4)!} = 5040\)</span></li>
+<li><span class="math inline">\(A^{(r)}_{10,4} = 10^4 = 10000\)</span></li>
+<li><span class="math inline">\(P_3 = 3! = 6\)</span></li>
+<li><span class="math inline">\(P_6^{3,2} = \frac{6!}{3!2!} = 60\)</span></li>
+<li><span class="math inline">\(C_{10,2} = \frac{10!}{2!(10-2)!} = 45\)</span></li>
+<li><span class="math inline">\(C^{(r)}_{5,3} = \frac{(5+3-1)!}{3!(5-1)!} = 35\)</span></li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r fold-show"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="kw">factorial</span>(<span class="dv">5</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true"></a><span class="kw">gamma</span>(<span class="dv">6</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true"></a><span class="co">##</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true"></a><span class="kw">factorial</span>(<span class="dv">10</span>)<span class="op">/</span><span class="kw">factorial</span>(<span class="dv">10-4</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true"></a><span class="kw">prod</span>(<span class="dv">10</span><span class="op">:</span>(<span class="dv">10-4</span><span class="op">+</span><span class="dv">1</span>))</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true"></a><span class="co">##</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true"></a><span class="dv">10</span><span class="op">^</span><span class="dv">4</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true"></a><span class="co">##</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true"></a><span class="kw">factorial</span>(<span class="dv">6</span>)<span class="op">/</span>(<span class="kw">factorial</span>(<span class="dv">3</span>)<span class="op">*</span><span class="kw">factorial</span>(<span class="dv">2</span>))</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true"></a><span class="kw">prod</span>(<span class="dv">6</span><span class="op">:</span>(<span class="dv">6</span><span class="op">-</span><span class="kw">max</span>(<span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">2</span>))<span class="op">+</span><span class="dv">1</span>))<span class="op">/</span><span class="kw">factorial</span>(<span class="kw">min</span>(<span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">2</span>)))</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true"></a><span class="co">##</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true"></a><span class="kw">factorial</span>(<span class="dv">10</span>)<span class="op">/</span>(<span class="kw">factorial</span>(<span class="dv">2</span>)<span class="op">*</span><span class="kw">factorial</span>(<span class="dv">10-2</span>))</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true"></a><span class="kw">prod</span>(<span class="dv">10</span><span class="op">:</span>(<span class="kw">max</span>(<span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">10-2</span>))<span class="op">+</span><span class="dv">1</span>))<span class="op">/</span><span class="kw">factorial</span>(<span class="kw">min</span>(<span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">10-2</span>)))</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true"></a><span class="kw">choose</span>(<span class="dv">10</span>,<span class="dv">2</span>)</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true"></a><span class="co">##</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true"></a><span class="kw">factorial</span>(<span class="dv">5</span><span class="op">+</span><span class="dv">3-1</span>)<span class="op">/</span>(<span class="kw">factorial</span>(<span class="dv">3</span>)<span class="op">*</span><span class="kw">factorial</span>(<span class="dv">5-1</span>))</span></code></pre></div>
+<p><strong>OBS:</strong> Existem funções para calcular arranjos, permutações e combinaçõess com e sem repeticção em <em>pacotes</em> (ex. <code>combinat</code>, <code>gtools</code>) do <span class="math inline">\(R\)</span>.</p>
+</div>
+<div id="resolva-os-exercícios-propostos" class="section level2" number="3.2">
+<h2 number="3.2"><span class="header-section-number">3.2</span> Resolva os exercícios propostos</h2>
+<ol style="list-style-type: lower-alpha">
+<li>De quantas maneiras podemos organizar 3 livros de um total de 10 livros distintos em uma estante?</li>
+<li>Considere que placas de veículos são compostas por uma parte inicial com 4 letras outra parte com 3 algarismos. Letras e algarismos podem se repetir. Quantas placas podem ser geradas?</li>
+<li>Quantos anagramas podemos gerar com as letras da palavra BRASIL?</li>
+<li>De quantas formas podemos ordenar 6 bolas sendo que 2 são verdes, 1 é azul e 3 são vermelhas?</li>
+<li>Um pesquisador precisa escolher três cobaias de um grupo de oito cobaias. Determine o número de maneiras que ele pode realizar a escolha.</li>
+<li>Uma vendedora de cosméticos fez uma promoção com 5 opções de cores de batons em que o cliente pode escolher 3 cores para montar um kit. De quantas maneiras distintas podemos montar um kit?</li>
+</ol>
+</div>
+</div>
+<div id="objetos-vetores" class="section level1" number="4">
+<h1 number="4"><span class="header-section-number">4</span> Objetos: vetores</h1>
 <p>A função <code>c()</code> pode ser uasada para definir um vetor como ilustrado a seguir.<br />
 Por exemplo, para criar o vetor <span class="math inline">\(X = (3, 2.5, 1.2, 5, 8)\)</span> fazemos:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r fold-show"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a>X &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">3</span>, <span class="fl">2.5</span>, <span class="fl">1.2</span>, <span class="dv">5</span>, <span class="dv">8</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a>X</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a><span class="co"># [1] 3.0 2.5 1.2 5.0 8.0</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r fold-show"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a>X &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">3</span>, <span class="fl">2.5</span>, <span class="fl">1.2</span>, <span class="dv">5</span>, <span class="dv">8</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true"></a>X</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true"></a><span class="co"># [1] 3.0 2.5 1.2 5.0 8.0</span></span></code></pre></div>
 <p>Além disto certos vetores possuem um “padrão” e pode ser criados de forma mais conveniente usando recursos como <code>:</code>, <code>seq()</code> e <code>rep()</code>. Examine os exemplos a seguir.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r fold-show"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="dv">0</span><span class="op">:</span><span class="dv">10</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true"></a><span class="co">#  [1]  0  1  2  3  4  5  6  7  8  9 10</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true"></a><span class="dv">8</span><span class="op">:</span><span class="dv">12</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true"></a><span class="co"># [1]  8  9 10 11 12</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true"></a><span class="dv">15</span><span class="op">:</span><span class="dv">7</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true"></a><span class="co"># [1] 15 14 13 12 11 10  9  8  7</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true"></a><span class="co">##</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true"></a><span class="kw">seq</span>(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dt">by =</span> <span class="dv">1</span>)</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true"></a><span class="co">#  [1]  0  1  2  3  4  5  6  7  8  9 10</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true"></a><span class="kw">seq</span>(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dt">by =</span> <span class="dv">2</span>)</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true"></a><span class="co"># [1]  0  2  4  6  8 10</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true"></a><span class="kw">seq</span>(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dt">length =</span> <span class="dv">4</span>)</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true"></a><span class="co"># [1]  0.000000  3.333333  6.666667 10.000000</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true"></a><span class="co">##</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true"></a><span class="kw">rep</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">3</span>, <span class="dt">times =</span> <span class="dv">2</span>)</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true"></a><span class="co"># [1] 1 2 3 1 2 3</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true"></a><span class="kw">rep</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">3</span>, <span class="dt">each =</span> <span class="dv">2</span>)</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true"></a><span class="co"># [1] 1 1 2 2 3 3</span></span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true"></a><span class="kw">rep</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">3</span>, <span class="dv">2</span>)</span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true"></a><span class="co"># [1] 1 2 3 1 2 3</span></span></code></pre></div>
-<div id="fornecer-comandos-para-criar-vetores-a-seguir." class="section level2" number="3.1">
-<h2 number="3.1"><span class="header-section-number">3.1</span> Fornecer comandos para criar vetores a seguir.</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r fold-show"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a><span class="dv">0</span><span class="op">:</span><span class="dv">10</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true"></a><span class="co">#  [1]  0  1  2  3  4  5  6  7  8  9 10</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true"></a><span class="dv">8</span><span class="op">:</span><span class="dv">12</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true"></a><span class="co"># [1]  8  9 10 11 12</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true"></a><span class="dv">15</span><span class="op">:</span><span class="dv">7</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true"></a><span class="co"># [1] 15 14 13 12 11 10  9  8  7</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true"></a><span class="co">##</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true"></a><span class="kw">seq</span>(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dt">by =</span> <span class="dv">1</span>)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true"></a><span class="co">#  [1]  0  1  2  3  4  5  6  7  8  9 10</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true"></a><span class="kw">seq</span>(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dt">by =</span> <span class="dv">2</span>)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true"></a><span class="co"># [1]  0  2  4  6  8 10</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true"></a><span class="kw">seq</span>(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dt">length =</span> <span class="dv">4</span>)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true"></a><span class="co"># [1]  0.000000  3.333333  6.666667 10.000000</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true"></a><span class="co">##</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true"></a><span class="kw">rep</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">3</span>, <span class="dt">times =</span> <span class="dv">2</span>)</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true"></a><span class="co"># [1] 1 2 3 1 2 3</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true"></a><span class="kw">rep</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">3</span>, <span class="dt">each =</span> <span class="dv">2</span>)</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true"></a><span class="co"># [1] 1 1 2 2 3 3</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true"></a><span class="kw">rep</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">3</span>, <span class="dv">2</span>)</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true"></a><span class="co"># [1] 1 2 3 1 2 3</span></span></code></pre></div>
+<div id="fornecer-comandos-para-criar-vetores-a-seguir." class="section level2" number="4.1">
+<h2 number="4.1"><span class="header-section-number">4.1</span> Fornecer comandos para criar vetores a seguir.</h2>
 <ol style="list-style-type: lower-alpha">
 <li><code>1 1 1 2 2 2 3 3 3 4 4 4 5 5 5</code></li>
 <li><code>1 2 3 1 2 3 1 2 3 1 2 3 1 2 3</code></li>
@@ -703,16 +771,16 @@ Por exemplo, para criar o vetor <span class="math inline">\(X = (3, 2.5, 1.2, 5,
 </ol>
 <!-- **Dica:** ``rep()`` e ``seq()`` -->
 </div>
-<div id="criar-vetores-com-os-seguintes-elementos" class="section level2" number="3.2">
-<h2 number="3.2"><span class="header-section-number">3.2</span> Criar vetores com os seguintes elementos:</h2>
+<div id="criar-vetores-com-os-seguintes-elementos" class="section level2" number="4.2">
+<h2 number="4.2"><span class="header-section-number">4.2</span> Criar vetores com os seguintes elementos:</h2>
 <ol style="list-style-type: lower-alpha">
 <li><code>12   14   16   11   12   18   15   12   15</code></li>
 <li><code>3  7  11  15  19  23</code></li>
 <li><code>1  2  4  7  11  16  22  29  37  46  56  67</code></li>
 </ol>
 </div>
-<div id="fornecer-comandos-que-forneçam-a-partir-dos-vetores-criados-no-exemplo-anterior" class="section level2" number="3.3">
-<h2 number="3.3"><span class="header-section-number">3.3</span> Fornecer comandos que forneçam a partir dos vetores criados no exemplo anterior:</h2>
+<div id="fornecer-comandos-que-forneçam-a-partir-dos-vetores-criados-no-exemplo-anterior" class="section level2" number="4.3">
+<h2 number="4.3"><span class="header-section-number">4.3</span> Fornecer comandos que forneçam a partir dos vetores criados no exemplo anterior:</h2>
 <ol style="list-style-type: lower-alpha">
 <li>Quantos valores únicos há em a) ?</li>
 <li>Quais os valores em a) maiores que 13 ?</li>
