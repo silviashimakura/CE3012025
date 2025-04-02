@@ -42,6 +42,7 @@ output:
 **Semana 1**
 
  - **Semana de recepção aos calouros**
+ - 13/03/25 (qui) - [Apresentação do curso.](slides/100-introducao.pdf)
 
 **Semana 2**
 
@@ -74,7 +75,7 @@ output:
 **Semana 6**
 
  - 14/04/25 (seg) - Tira dúvidas Silvia (sala 203).
- - 15/04/25 (ter) - Tira dúvidas Amanda (sala XXX).
+ - 15/04/25 (ter) - Tira dúvidas Amanda (sala 223).
  - 17/04/25 (qui) - [**PROVA 1**](provas/prova1-ce301.pdf).
  - 18/04/25 (sex) - **Feriado: sexta-feira santa.**
 

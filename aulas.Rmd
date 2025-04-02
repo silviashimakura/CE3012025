@@ -67,16 +67,16 @@ output:
     
 **Semana 5**
 
- - 07/04/25 (seg) - 
- - 08/04/25 (ter) - 
- - 10/04/25 (qui) - 
- - 11/04/25 (sex) - 
+ - 07/04/25 (seg) - [Análises bivariadas.](slides/106-exploratoria-bivariada.pdf)
+ - 08/04/25 (ter) - Análises bivariadas.
+ - 10/04/25 (qui) - [Análises bivariadas no R.](praticas-R/102-analises-bivariadas.R)
+ - 11/04/25 (sex) - [Atividade prática: análises bivariadas](praticas-aula/103-analises-bivariadas-solucao.pdf).
     
 **Semana 6**
 
- - 14/04/25 (seg) - 
- - 15/04/25 (ter) - 
- - 17/04/25 (qui) - **PROVA 1**
+ - 14/04/25 (seg) - Tira dúvidas Silvia (sala 203).
+ - 15/04/25 (ter) - Tira dúvidas Amanda (sala 223).
+ - 17/04/25 (qui) - [**PROVA 1**]
  - 18/04/25 (sex) - **Feriado: sexta-feira santa.**
 
 ---
