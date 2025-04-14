@@ -95,14 +95,14 @@ plot(dados$money,dados$happy,  pch=19,
 #abline(lm(dados$happy~dados$money), col="red", lwd=2)
 ```
 
-11) Obtenha uma medida de associação entre *sex** e **love**. O que você conclui? (1 ponto)
+11) Obtenha uma medida de associação entre **sex** e **love**. O que você conclui? (1 ponto)
 
 12) Responda de forma sucinta: (1 ponto)
-  a) Qual a diferença entre amostragem estratificada e amostragem por conglomerados?
+  a) Qual a diferença entre amostragem casual simples e amostragem sistemática?
   b) Por que é melhor evitar o gráfico de setores?
-  c) Por que não podemos afirmar que dois conjuntos de valores com a mesma mediana são iguais?
+  c) Uma medida de tendência central é suficiente para representar uma variável? Explique.
   d) O que é um ponto atípico ou outlier?
-  e) Causalidade implica em correlação, mas correlação não implica causalidade. Justifique.
+  e) O que o coeficiente de correlação expressa? Comente suas características.
 
 \begin{center}
 \underline{\hspace{10cm}}
@@ -117,7 +117,7 @@ $s^2=Var(y)=\frac{\sum_{i=1}^n(y_i-\bar y)^2}{n-1}=\frac{1}{n-1}\left(\sum_{i=1}
 
 $CV=100 \cdot \frac{s}{\bar y}$ \hspace{1cm} $z=\frac{y_i-\bar y}{s}$ \hspace{1cm} $H=-\sum_{i=1}^Sf_i \cdot ln(fi)$ \hspace{1cm} $Q=\sum_{i=1}^r\sum_{j=1}^s \frac{(o_{ij}-e_{ij})^2}{e_{ij}}$
 
-$Cov(y_1,y_2)=\frac{\sum_{i=1}^n(y_{1i}-\bar y_1)(y_{2i}-\bar y_2)}{n-1}$ \hspace{2cm} $r=\frac{\sum_{i=1}^n (y_{1i}-\bar y_1)(y_{2i}-\bar y_2)}{\sqrt{\sum_{i=1}^n(y1i-\bar y_1)^2} \cdot \sqrt{\sum_{i=1}^n (y_{2i}-\bar y_2)^2}}=\frac{Cov(y_1,y_2)}{\sqrt{Var(y_1)} \cdot \sqrt{Var(y2)}}$
+$Cov(y_1,y_2)=\frac{\sum_{i=1}^n(y_{1i}-\bar y_1)(y_{2i}-\bar y_2)}{n-1}$ \hspace{2cm} $r=\frac{\sum_{i=1}^n (y_{1i}-\bar y_1)(y_{2i}-\bar y_2)}{\sqrt{\sum_{i=1}^n(y1i-\bar y_1)^2} \cdot \sqrt{\sum_{i=1}^n (y_{2i}-\bar y_2)^2}}=\frac{Cov(y_1,y_2)}{\sqrt{Var(y_1)} \cdot \sqrt{Var(y_2)}}$
 
 \underline{\hspace{10cm}}
 
