@@ -86,7 +86,7 @@ output:
 **Semana 7**
 
  - 21/04/25 (seg) - **Feriado: Tiradentes.**
- - 22/04/25 (ter) - Motivando probabilidades.
+ - 22/04/25 (ter) - [Motivando probabilidades](slides/IntroProb.pdf). [Pré-Prob](praticas-aula/preprob.pdf).
  - 24/04/25 (qui) - [Introdução a probabilidade](slides/200-intro-prob.pdf).
  - 25/04/25 (sex) - [Atividade prática: Lista 1 (item 1 ao item 3)](praticas-aula/200-probabilidade-enunciados.pdf).
 
@@ -95,14 +95,14 @@ output:
  - 28/04/25 (seg) - [Operações com probabilidades](slides/201-operacoes-com-probabilidades.pdf).
  - 29/04/25 (ter) - [Atividade prática: Lista 1 (item 4 ao item 7)](praticas-aula/200-probabilidade-enunciados.pdf).
  - 01/05/25 (qui) - **Feriado: dia do trabalho.**
- - 02/05/25 (sex) -  [Atividade prática: Lista 2 (item 1 ao item 5)](pj-pospro.pdf)
+ - 02/05/25 (sex) -  [Atividade prática: Lista 2 (item 1 ao item 5)](praticas-aula/pj-pospro.pdf)
     
 **Semana 9**
 
  - 05/05/25 (seg) - [Teorema de Bayes](slides/202-teorema-de-bayes.pdf).
  - 06/05/25 (ter) - [Atividade prática: Lista 1 (item 8)](praticas-aula/200-probabilidade-enunciados.pdf).
  - 08/05/25 (qui) - Obtendo probabilidades da forma frequentista ([moeda](praticas-R/201-moeda.R), [dado](praticas-R/202-dado.R), [chavalier 1](praticas-R/203-chavalier1.R), [chavalier 2](praticas-R/204-chavalier2.R)). Calculando probabilidade com base em tabelas de dupla entrada ([animais](praticas-R/205-prob-animais.R)).
- - 09/05/25 (sex) - [Atividade prática: Lista 2 (item 6 até item 10)](pj-pospro.pdf)
+ - 09/05/25 (sex) - [Atividade prática: Lista 2 (item 6 até item 10)](praticas-aula/pj-pospro.pdf)
     
 **Semana 10**
 
