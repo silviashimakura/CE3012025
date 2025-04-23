@@ -87,8 +87,8 @@ output:
 
  - 21/04/25 (seg) - **Feriado: Tiradentes.**
  - 22/04/25 (ter) - [Motivando probabilidades](slides/IntroProb.pdf). [Pré-Prob](praticas-aula/preprob.pdf).
- - 24/04/25 (qui) - [Introdução a probabilidade](slides/200-intro-prob.pdf).
- - 25/04/25 (sex) - [Atividade prática: Lista 1 (item 1 ao item 3)](praticas-aula/200-probabilidade-enunciados.pdf).
+ - 24/04/25 (qui) - Motivando probabilidades.
+ - 25/04/25 (sex) - [Introdução a probabilidade](slides/200-intro-prob.pdf). [Atividade prática: Lista 1 (item 1 ao item 3)](praticas-aula/200-probabilidade-enunciados.pdf).
 
 **Semana 8**
 
