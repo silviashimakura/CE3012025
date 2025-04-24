@@ -86,7 +86,7 @@ output:
 **Semana 7**
 
  - 21/04/25 (seg) - **Feriado: Tiradentes.**
- - 22/04/25 (ter) - [Motivando probabilidades](slides/IntroProb.pdf). [Pré-Prob](praticas-aula/preprob.pdf).
+ - 22/04/25 (ter) - [Motivando probabilidades](slides/IntroProb.pdf). [Pré-Prob](praticas-aula/preprobSOL1a7.pdf).
  - 24/04/25 (qui) - Motivando probabilidades.
  - 25/04/25 (sex) - [Introdução a probabilidade](slides/200-intro-prob.pdf). [Atividade prática: Lista 1 (item 1 ao item 3)](praticas-aula/200-probabilidade-enunciados.pdf).
 
