@@ -144,14 +144,14 @@ DT::datatable(notas[,c('GRR',
                        'REMOTA 1', 
                        'REMOTA 2',
                        'REMOTA 3',
-                       'REMOTA 4',
-                       'TRABALHO 1',
-                       'TRABALHO 2',
+                       'REMOTA 4'#,
+                       #'TRABALHO 1',
+                       #'TRABALHO 2',
                        #"NOTAS PRÉ EXAME",
                        #"SITUAÇÃO PRÉ EXAME"
-                       "EXAME",
-                       "NOTAS FINAIS",
-                       "SITUAÇÃO FINAL"
+                       #"EXAME",
+                       #"NOTAS FINAIS",
+                       #"SITUAÇÃO FINAL"
                        )], 
               class = 'cell-border stripe',
               rownames = F,
@@ -162,7 +162,7 @@ DT::datatable(notas[,c('GRR',
 ```
 
 <center>
-```{r, echo=FALSE, warning=FALSE}
+```{r, eval=FALSE,echo=FALSE, warning=FALSE}
 
 datas1 <- stringr::str_remove(names(notas)[15:(length(names(notas))-5)],
                               "'")
@@ -181,7 +181,7 @@ pander::pander(dispersao(subset(presencas, datas <= lubridate::today())$presenca
 ```
 </center>
 
-```{r, comment=FALSE, message=FALSE, fig.align='center', warning=TRUE, echo = FALSE, warning=FALSE, fig.width=10}
+```{r, eval=FALSE,comment=FALSE, message=FALSE, fig.align='center', warning=TRUE, echo = FALSE, warning=FALSE, fig.width=10}
 
 library(ggplot2)
 library(ggpubr)
