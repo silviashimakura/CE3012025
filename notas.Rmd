@@ -6,7 +6,7 @@ subtitle: |
   | Prof. Dr. Paulo Justiniano Ribeiro Junior
 author: |
   |
-  | 2024/01 - Estatística e Ciência de Dados
+  | 2025/01 - Estatística e Ciência de Dados
 output:
   html_document:                    
     #toc: true                       
