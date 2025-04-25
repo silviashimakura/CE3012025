@@ -1,41 +1,25 @@
 ---
 title: "Estatística básica"
+author: "|\n| 2025/01 - Estatística e Ciência de Dados\n"
 subtitle: |
   | Prof. Dra. Silvia Emiko Shimakura
   | Prof. Dra. Amanda Merian Freitas Mendes
   | Prof. Dr. Paulo Justiniano Ribeiro Junior
-author: |
-  |
-  | 2025/01 - Estatística e Ciência de Dados
 output:
-  html_document:                    
-    #toc: true                       
-    #toc_depth: 3                    
-    #toc_float:                      
-    #  collapsed: true
-    #  smooth_scroll: true
-    #number_sections: true           
-    #theme: default
-    #spacelab
-    #default,cerulean,journal,flatly,readable,spacelab,
-    #united,cosmo,lumen,paper,sandstone,simplex,yeti
-    
+  pdf_document: default
+  html_document:
     highlight: espresso
-    #default, tango, pygments, kate, monochrome, espresso, zenburn, haddock, and textmate
-    #css: styles.css                
-    fig_width: 7                    
-    fig_height: 6                   
-    fig_caption: true               
-    fig_align: 'center'
-    #code_folding: hide              
-#    keep_md: true
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    fig_align: center
 ---
 
 ---
 
 # Notas e frequência
 
-Busque sua situação digitando seu GRR na caixa "Search".
+<!-- Busque sua situação digitando seu GRR na caixa "Search". -->
 
 \
 
@@ -135,29 +119,31 @@ notas$`SITUAÇÃO FINAL` <-
          "APROVADO",
          "REPROVADO")
 
-DT::datatable(notas[,c('GRR', 
-                       'FALTAS', 
-                       'PROVA 1', 
-                       'PROVA 2',
-                       'PROVA 3',
-                       'PROVA 4',
-                       'REMOTA 1', 
-                       'REMOTA 2',
-                       'REMOTA 3',
-                       'REMOTA 4'#,
-                       #'TRABALHO 1',
-                       #'TRABALHO 2',
-                       #"NOTAS PRÉ EXAME",
-                       #"SITUAÇÃO PRÉ EXAME"
-                       #"EXAME",
-                       #"NOTAS FINAIS",
-                       #"SITUAÇÃO FINAL"
-                       )], 
-              class = 'cell-border stripe',
-              rownames = F,
-              #filter = 'top',
-              editable = T
-              )
+# DT::datatable(notas[,c('GRR', 
+#                        'FALTAS', 
+#                        'PROVA 1', 
+#                        'PROVA 2',
+#                        'PROVA 3',
+#                        'PROVA 4',
+#                        'REMOTA 1', 
+#                        'REMOTA 2',
+#                        'REMOTA 3',
+#                        'REMOTA 4'#,
+#                        #'TRABALHO 1',
+#                        #'TRABALHO 2',
+#                        #"NOTAS PRÉ EXAME",
+#                        #"SITUAÇÃO PRÉ EXAME"
+#                        #"EXAME",
+#                        #"NOTAS FINAIS",
+#                        #"SITUAÇÃO FINAL"
+#                        )], 
+#               class = 'cell-border stripe',
+#               rownames = F,
+#               #filter = 'top',
+#               editable = F
+#               )
+
+knitr::kable(notas[,c(2,3,7,15)])
 
 ```
 
