@@ -93,9 +93,9 @@ output:
 **Semana 8**
 
  - 28/04/25 (seg) - [Operações com probabilidades](slides/201-operacoes-com-probabilidades.pdf).
- - 29/04/25 (ter) - [Atividade prática: Lista 1 (item 4 ao item 7)](praticas-aula/200-probabilidade-enunciados.pdf).
+ - 29/04/25 (ter) - [Atividade prática: Lista 1 (item 4 ao item 7)](praticas-aula/200-probabilidade-enunciados.pdf), [Lista 2 (item 1 ao item 5).](praticas-aula/pj-pospro.pdf)
  - 01/05/25 (qui) - **Feriado: dia do trabalho.**
- - 02/05/25 (sex) -  [Atividade prática: Lista 2 (item 1 ao item 5)](praticas-aula/pj-pospro.pdf)
+ - 02/05/25 (sex) - Recesso.
     
 **Semana 9**
 
