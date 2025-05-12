@@ -101,7 +101,7 @@ output:
 
  - 05/05/25 (seg) - [Teorema de Bayes](slides/202-teorema-de-bayes.pdf).
  - 06/05/25 (ter) - [Atividade prática: Lista 1 (item 8)](praticas-aula/200-probabilidade-solucao.pdf).
- - 08/05/25 (qui) - Obtendo probabilidades da forma frequentista ([moeda](praticas-R/201-moeda.R), [dado](praticas-R/202-dado.R), [chavalier 1](praticas-R/203-chavalier1.R), [chavalier 2](praticas-R/204-chavalier2.R)). Calculando probabilidade com base em tabelas de dupla entrada ([animais](praticas-R/205-prob-animais.R)).
+ - 08/05/25 (qui) - [Resumos numéricos](praticas-R/milsa.R). Obtendo probabilidades da forma frequentista ([moeda](praticas-R/201-moeda.R), [dado](praticas-R/202-dado.R), [chavalier 1](praticas-R/203-chavalier1.R), [chavalier 2](praticas-R/204-chavalier2.R)). Calculando probabilidade com base em tabelas de dupla entrada ([animais](praticas-R/205-prob-animais.R)).
  - 09/05/25 (sex) - [Atividade prática: Lista 2 (item 6 até item 10)](praticas-aula/pj-pospro.pdf)
     
 **Semana 10**
