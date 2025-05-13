@@ -109,7 +109,7 @@ output:
  - 12/05/25 (seg) - Tira dúvidas.
  - 13/05/25 (ter) - Tira dúvidas.
  - 15/05/25 (qui) - **PROVA 2**
- - 16/05/25 (sex) - 
+ - 16/05/25 (sex) - [Variáveis aleatórias discretas e contínuas.](slides/300-variaveis-aleatorias.pdf)
 
 ---
 
@@ -117,21 +117,21 @@ output:
 
 **Semana 11**
 
- - 19/05/25 (seg) - 
- - 20/05/25 (qua) - 
- - 22/05/25 (qui) - 
- - 23/05/25 (sex) - 
+ - 19/05/25 (seg) - [Atividade prática: variáveis aleatórias](praticas-aula/300-variaveis-aleatorias-enunciado.pdf).
+ - 20/05/25 (ter) - [Lista: Variáveis aleatórias](listas/202-exercicios-variaveis-aleatorias.pdf).
+ - 22/05/25 (qui) - [Distribuições de probabilidade discretas](slides/301-distribuicoes-discretas.pdf).
+ - 23/05/25 (sex) - [Lista: Distribuições de probabilidade discretas](listas/203-exercicios-distribuicoes.pdf).
 
 **Semana 12**
 
- - 26/05/27 (seg) - 
- - 27/05/25 (ter) - 
- - 29/05/25 (qui) - 
- - 30/05/25 (sex) - 
+ - 26/05/27 (seg) - [Distribuições de probabilidade contínuas](slides/302-distribuicoes-continuas.pdf).
+ - 27/05/25 (ter) - [Lista: Distribuições de probabilidade contínuas](listas/203-exercicios-distribuicoes.pdf).
+ - 29/05/25 (qui) - [Variáveis aleatórias e distribuições de probabilidade no R.](praticas-R/300-distribuicoes.R).
+ - 30/05/25 (sex) - Tira dúvidas.
     
 **Semana 13**
 
- - 02/06/25 (seg) - 
+ - 02/06/25 (seg) - Tira dúvidas.
  - 03/06/25 (ter) - **PROVA 3**
  - 05/06/25 (qui) - 
  - 06/06/25 (sex) - 
