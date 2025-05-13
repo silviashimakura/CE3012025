@@ -126,7 +126,7 @@ output:
 
  - 26/05/27 (seg) - [Distribuições de probabilidade contínuas](slides/302-distribuicoes-continuas.pdf).
  - 27/05/25 (ter) - [Lista: Distribuições de probabilidade contínuas](listas/203-exercicios-distribuicoes.pdf).
- - 29/05/25 (qui) - [Variáveis aleatórias e distribuições de probabilidade no R.](praticas-R/300-distribuicoes.R).
+ - 29/05/25 (qui) - [Variáveis aleatórias e distribuições de probabilidade no R.](praticas-R/300-distribuicoes.R)
  - 30/05/25 (sex) - Tira dúvidas.
     
 **Semana 13**
