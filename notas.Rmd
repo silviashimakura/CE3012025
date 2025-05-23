@@ -147,8 +147,10 @@ knitr::kable(notas[,c(2,3,4,7,8,19)])
 
 ```
 
+---
+
 <center>
-```{r, eval=FALSE,echo=FALSE, warning=FALSE}
+```{r, eval=TRUE,echo=FALSE, warning=FALSE}
 
 datas1 <- stringr::str_remove(names(notas)[20:(length(names(notas))-5)],
                               "'")
@@ -162,12 +164,12 @@ presencas <- colSums(is.na(notas[,20:(length(names(notas))-5)]))
 presencas <- data.frame(datas = datas,
                         presencas = presencas)
 
-pander::pander(posicao(subset(presencas, datas <= lubridate::today())$presencas))
-pander::pander(dispersao(subset(presencas, datas <= lubridate::today())$presencas))
+#pander::pander(posicao(subset(presencas, datas <= lubridate::today())$presencas))
+#pander::pander(dispersao(subset(presencas, datas <= lubridate::today())$presencas))
 ```
 </center>
 
-```{r, eval=FALSE,comment=FALSE, message=FALSE, fig.align='center', warning=TRUE, echo = FALSE, warning=FALSE, fig.width=10}
+```{r, eval=TRUE,comment=FALSE, message=FALSE, fig.align='center', warning=TRUE, echo = FALSE, warning=FALSE, fig.width=10}
 
 library(ggplot2)
 library(ggpubr)
@@ -194,6 +196,10 @@ ggplot(data = subset(presencas, datas <= lubridate::today()),
         axis.title = element_text(face = "bold",
                                   size = 15),
         text = element_text(size=15))
+
+pander::pander(posicao(subset(presencas, datas <= lubridate::today())$presencas))
+pander::pander(dispersao(subset(presencas, datas <= lubridate::today())$presencas))
+
 ```
 
 ---
