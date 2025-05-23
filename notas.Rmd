@@ -6,13 +6,13 @@ subtitle: |
   | Prof. Dra. Amanda Merian Freitas Mendes
   | Prof. Dr. Paulo Justiniano Ribeiro Junior
 output:
-  pdf_document: default
   html_document:
     highlight: espresso
     fig_width: 7
     fig_height: 6
     fig_caption: true
     fig_align: center
+  pdf_document: default
 ---
 
 ---
