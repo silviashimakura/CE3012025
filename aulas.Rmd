@@ -119,7 +119,7 @@ output:
 
  - 19/05/25 (seg) - [Atividade prática: variáveis aleatórias](praticas-aula/300-variaveis-aleatorias-enunciado.pdf).
  - 20/05/25 (ter) - [Lista: Variáveis aleatórias](listas/202-exercicios-variaveis-aleatorias.pdf).
- - 22/05/25 (qui) - [Famílias de distribuições](slides/ProbVAs-1.pdf). [Distribuições de probabilidade discretas](slides/301-distribuicoes-discretas.pdf).
+ - 22/05/25 (qui) - [Famílias de distribuições](slides/ProbVAs-2.pdf). [Distribuições de probabilidade discretas](slides/301-distribuicoes-discretas.pdf).
  - 23/05/25 (sex) - [Lista: Distribuições de probabilidade discretas](listas/203-exercicios-distribuicoes.pdf).
 
 **Semana 12**
