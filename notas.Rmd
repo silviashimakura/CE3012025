@@ -164,8 +164,8 @@ presencas <- colSums(is.na(notas[,20:(length(names(notas))-5)]))
 presencas <- data.frame(datas = datas,
                         presencas = presencas)
 
-#pander::pander(posicao(subset(presencas, datas <= lubridate::today())$presencas))
-#pander::pander(dispersao(subset(presencas, datas <= lubridate::today())$presencas))
+pander::pander(posicao(subset(presencas, datas <= lubridate::today())$presencas))
+pander::pander(dispersao(subset(presencas, datas <= lubridate::today())$presencas))
 ```
 </center>
 
@@ -197,8 +197,8 @@ ggplot(data = subset(presencas, datas <= lubridate::today()),
                                   size = 15),
         text = element_text(size=15))
 
-pander::pander(posicao(subset(presencas, datas <= lubridate::today())$presencas))
-pander::pander(dispersao(subset(presencas, datas <= lubridate::today())$presencas))
+#pander::pander(posicao(subset(presencas, datas <= lubridate::today())$presencas))
+#pander::pander(dispersao(subset(presencas, datas <= lubridate::today())$presencas))
 
 ```
 
