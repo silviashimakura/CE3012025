@@ -126,15 +126,15 @@ output:
 
  - 26/05/27 (seg) - [Distribuições de probabilidade contínuas](slides/302-distribuicoes-continuas.pdf).
  - 27/05/25 (ter) - [Lista: Distribuições de probabilidade contínuas](listas/203-exercicios-distribuicoes.pdf).
- - 29/05/25 (qui) - [Variáveis aleatórias e distribuições de probabilidade no R.](praticas-R/300-distribuicoes.R)
+ - 29/05/25 (qui) - Comemoração do Dia do Estatístico.
  - 30/05/25 (sex) - Tira dúvidas.
     
 **Semana 13**
 
  - 02/06/25 (seg) - Tira dúvidas.
  - 03/06/25 (ter) - **PROVA 3**
- - 05/06/25 (qui) - 
- - 06/06/25 (sex) - 
+ - 05/06/25 (qui) - [Variáveis aleatórias e distribuições de probabilidade no R.](praticas-R/300-distribuicoes.R)
+ - 06/06/25 (sex) - [Introdução à inferência.](slides/400-intro-inferencia.pdf) [Exercícios.](praticas-aula/400-intro-inferencia-dist-amostral-enunciado.pdf)
 
 ---
 
@@ -142,23 +142,23 @@ output:
 
 **Semana 14**
 
- - 09/06/25 (seg) - 
- - 10/06/25 (ter) - 
- - 12/06/25 (qui) - 
- - 13/06/25 (sex) - 
+ - 09/06/25 (seg) - [Estimação pontual e intervalar](slides/401-estimacao-pontual-intervalar.pdf)
+ - 10/06/25 (ter) - [Exercícios](praticas-aula/401-intervalo-de-confianca-enunciado.pdf).
+ - 12/06/25 (qui) - [Prática em R](praticas-R/401-exercicios-ic-tamanho-amostral.R).
+ - 13/06/25 (sex) - [Tamanho amostral.](slides/402-tamanho-amostral.pdf)  [Exercícios.](praticas-aula/402-tamanho-amostral-enunciado.pdf)
 
 **Semana 15**
 
- - 16/06/25 (seg) - 
- - 17/06/25 (ter) - 
+ - 16/06/25 (seg) - [Introdução aos testes de hipóteses, testes para uma população](slides/403-testes-de-hipoteses.pdf).
+ - 17/06/25 (ter) - [Exercícios](praticas-aula/403-teste-de-hipoteses-enunciado.pdf).
  - 19/06/25 (qui) - **Feriado: Corpus Christ**
- - 20/06/25 (sex) - 
+ - 20/06/25 (sex) - Tira dúvidas.
     
 **Semana 16**
 
- - 23/06/25 (seg) - 
- - 24/06/25 (ter) - 
- - 26/06/25 (qui) - 
+ - 23/06/25 (seg) - [Exercícios](praticas-aula/exercicios-revisao-inferencia.pdf).
+ - 24/06/25 (ter) - Tira dúvidas.
+ - 26/06/25 (qui) - [Prática em R](praticas-R/402-ic-th.R).
  - 27/06/25 (sex) - **PROVA 4**
  
 **Semana 17**
