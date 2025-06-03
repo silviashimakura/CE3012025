@@ -63,6 +63,10 @@ navbar:
           icon: fa-arrow-right
           href: tabelas/formulario2.pdf
           
+        - text: "Tabela z (acumulada completa)"
+          icon: fa-arrow-right
+          href: tabelas/Tabela da Distribuição Normal.pdf
+
         - text: "Tabela z (lado positivo)"
           icon: fa-arrow-right
           href: tabelas/tabela-z.pdf
