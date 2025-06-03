@@ -123,7 +123,7 @@ As atividades avaliativas serão em dois formatos:
 
 **Pesos das atividades avaliativas**
 
- - Estão planejadas 5 atividades remotas e 4 provas presenciais.
+ - Estão planejadas 4 atividades remotas e 4 provas presenciais.
  - Cada prova presencial vale 20% da nota final.
  - Os 20% finais correspondem à média das atividades remotas e outras atividades feitas em dinâmicas em sala.
 
