@@ -133,7 +133,7 @@ output:
 
  - 02/06/25 (seg) - Tira dúvidas.
  - 03/06/25 (ter) - **PROVA 3**
- - 05/06/25 (qui) - [Prática em R.](praticas-R/vas.R) [Variáveis aleatórias e distribuições de probabilidade no R.](praticas-R/300-distribuicoes.R)
+ - 05/06/25 (qui) - [Prática em R.(1)](praticas-R/vas.R) [Prática em R.(2)](praticas-R/vasdists.R) [Variáveis aleatórias e distribuições de probabilidade no R.](praticas-R/300-distribuicoes.R)
  - 06/06/25 (sex) - [Introdução à inferência.](slides/400-intro-inferencia.pdf) [Exercícios.](praticas-aula/400-intro-inferencia-dist-amostral-enunciado.pdf)
 
 ---
