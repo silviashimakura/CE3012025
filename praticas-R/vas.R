@@ -22,7 +22,7 @@ Ftempo <- cumsum(Ptempo)
 Ftempo
 rbind(tempo, Ptempo, Ftempo)
 
-## P[T = t]  qual gráfico é o mais adequado?
+## F(T) = P[T <= t]  qual gráfico é o mais adequado?
 plot(tempo, Ftempo)
 plot(tempo, Ftempo, type = "l")
 plot(tempo, Ftempo, type = "b")
@@ -36,7 +36,7 @@ plot(c(2, tempo, 10), c(0, Ftempo, 1), type = "n", xlab = "tempo", ylab = "F(tem
 points(tempo, Ftempo, type = "p", pch = 19)
 segments(c(2, tempo), c(0, Ftempo), c(tempo, 10), c(0, Ftempo), type = "p", pch = 19)
 
-par(mfrow = c(1,2))
+par(mfrow = c(1,2), mar = c(3.5, 3.5, 0.5, 0.5), mgp = c(2,1,0))
 plot(tempo, Ptempo, type = "h", ylim = c(0, 0.20))
 
 plot(c(2, tempo, 10), c(0, Ftempo, 1), type = "n", xlab = "tempo", ylab = "F(temp0)")
@@ -45,8 +45,10 @@ segments(c(2, tempo), c(0, Ftempo), c(tempo, 10), c(0, Ftempo), type = "p", pch 
 
 (Etempo <- sum(tempo * Ptempo))
 (Vtempo <- sum(((tempo - Etempo)^2) * Ptempo))
+## ou
+(Vtempo <- sum((tempo^2) * Ptempo) - Etempo^2)
 
-## Enunciado define a variável pontos
+## Enunciado define uma outro variável: pontos
 pontos <- 10:4
 Ppontos <- Ptempo
 rbind(pontos, Ppontos)
@@ -83,8 +85,9 @@ rm(tempo, Ptempo, Ftempo, Etempo, Vtempo, pontos, Ppontos, Epontos, Vpontos)
 ## Fim do Exemplo 1
 ##
 
-## Exercícios: Fazer versão computacional dos exercícios 2, 3, 6, 11
-
+##
+## Exercício: Fazer versão computacional dos exercícios 2, 3, 6, 11
+##
 
 ##
 ## Exemplo 2
@@ -116,15 +119,17 @@ Fy <- function(y){
 curve(Fy, from = -0.2, to = 6.2)
 
 
-## P[Y > 3]
-(6 - 3)*(1/8)
+## a) P[Y > 3]
+(6-3)*(1/8)
 integrate(fy, 3, 6)$value
 1 - Fy(3)
-## P[1 < Y <= 4]
+
+## b) P[1 < Y <= 4]
 (2-1)*(1/4) + (4-2)*(1/8)
 integrate(fy, 1, 4)$value
 Fy(4) - Fy(1)
-## P[Y < 3| Y >= 1] = P[1 <= Y < 3]/P[Y >= 1] 
+
+## c) P[Y < 3| Y >= 1] = P[1 <= Y < 3]/P[Y >= 1] 
 ((2-1)*(1/4) + (3-2)*(1/8))
 (1-(1-0)*(1/4))
 ((2-1)*(1/4) + (3-2)*(1/8))/(1-(1-0)*(1/4))
@@ -133,12 +138,45 @@ integrate(fy, 1, 6)$value
 integrate(fy, 1, 3)$value/integrate(fy, 1, 6)$value
 (Fy(3)-Fy(1))/(1 - Fy(1))
 
-rm(fy, Fy)
+## d) b tal que P[Y > b] = 0.6
+##    b é o *quantil* 0.4  (P[Y < b] = 0.4)
+invFy <- function(p){
+    if(any(p < 0 | p > 1)) stop("valor de p não permitido")
+    y <- numeric(length(p))
+    ind1 <- p >= 0 & p < 1/2
+    ind2 <- p >= 1/2 & p <= 1
+    y[ind1] <- 4*(p[ind1])
+    y[ind2] <- 2 + 8*(p[ind2] - 0.5)
+    return(y)
+}
+invFy(0.40)
+Fy(1.6)
+
+## outros exemplos
+Fy(1.5)
+invFy(0.375)
+Fy(4.5)
+invFy(0.8125)
+invFy(c(0.25, 0.50, 0.75))
+
+## e) Valor esperado e variância
+Efun <- function(y) y * fy(y)
+(EY <- integrate(Efun, lower = 0, upper = 6)$value)
+E2fun <- function(y) y^2 * fy(y)
+(EY2 <- integrate(E2fun, lower = 0, upper = 6)$value)
+(VarY <- EY2 - EY^2)
+## ou
+Vfun <- function(y) (y-EY)^2 * fy(y)
+integrate(Vfun, lower = 0, upper = 6)
+
+rm(fy, Fy, EY, EY2, VarY)
 ##
 ## fim exemplo 2
 ##
 
-
+##
+## Exercício: Fazer versão computacional do exercício 8
+##
 
 ##
 ## Exemplo 3
@@ -188,8 +226,22 @@ Fy(0.8)
 integrate(fy, 1.5, 2)$value/integrate(fy, 1, 2)$value
 (1-Fy(1.5))/(1-Fy(1.0))
 
+## c) Valor esperado e variância
+Efun <- function(y) y * fy(y)
+(EY <- integrate(Efun, lower = 0.5, upper = 2)$value)
+E2fun <- function(y) y^2 * fy(y)
+(EY2 <- integrate(E2fun, lower = 0.5, upper = 2)$value)
+(VarY <- EY2 - EY^2)
+## ou
+Vfun <- function(y) (y-EY)^2 * fy(y)
+integrate(Vfun, lower = 0.5, upper = 2)$value
 
-rm(fy, Fy, y.seq, fy.seq)
+rm(fy, Fy, y.seq, fy.seq, EY, EY2, VarY)
 ##
 ## Fim do exemplo 3
 ##
+
+##
+## Exercício: Fazer versão computacional dos exercícios 12 e 16
+##            - definir e plotar a função de densidade f(y)
+
