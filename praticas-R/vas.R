@@ -34,14 +34,14 @@ plot(tempo, Ftempo, type = "s", ylim = c(0, 1))
 
 plot(c(2, tempo, 10), c(0, Ftempo, 1), type = "n", xlab = "tempo", ylab = "F(temp0)")
 points(tempo, Ftempo, type = "p", pch = 19)
-segments(c(2, tempo), c(0, Ftempo), c(tempo, 10), c(0, Ftempo), type = "p", pch = 19)
+segments(c(2, tempo), c(0, Ftempo), c(tempo, 10), c(0, Ftempo), pch = 19)
 
 par(mfrow = c(1,2), mar = c(3.5, 3.5, 0.5, 0.5), mgp = c(2,1,0))
 plot(tempo, Ptempo, type = "h", ylim = c(0, 0.20))
 
 plot(c(2, tempo, 10), c(0, Ftempo, 1), type = "n", xlab = "tempo", ylab = "F(temp0)")
 points(tempo, Ftempo, type = "p", pch = 19)
-segments(c(2, tempo), c(0, Ftempo), c(tempo, 10), c(0, Ftempo), type = "p", pch = 19)
+segments(c(2, tempo), c(0, Ftempo), c(tempo, 10), c(0, Ftempo), pch = 19)
 
 (Etempo <- sum(tempo * Ptempo))
 (Vtempo <- sum(((tempo - Etempo)^2) * Ptempo))
@@ -71,7 +71,7 @@ Ppontos[pontos == 4]
 sum(Ppontos[pontos == 4 | pontos == 7])
 
 ## P[pontos <= 7]
-sum(Ppontos[pontos <= 7])
+sum(Ppontos[pontos <= 7]) 
 Fpontos[pontos == 7]
 
 ## P[pontos > 6]
