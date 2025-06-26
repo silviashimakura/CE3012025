@@ -14,7 +14,7 @@
 
 #----------------------------------------------------------------------
 
-# Média com variância populacional conhecida
+# 01. Inferência para média com variância populacional conhecida
 
 ## Um pesquisador deseja estudar o efeito de certa substância no tempo de 
 ## reação de seres vivos a um certo tipo de estímulo. Ele desconfia que o 
@@ -82,9 +82,7 @@ points(z_calculado,0, pch = 19, col = 4, cex = 1.5)
 
 # Usando uma função pronta
 
-library(BSDA)
-
-z.test(
+BSDA::z.test(
   x = cobaias,
   mu = mu0,
   sigma.x = sigma,
@@ -96,7 +94,7 @@ z.test(
 rm(list = ls())
 #----------------------------------------------------------------------
 
-# Teste de hipóteses para média com variância populacional desconhecida
+# 02. Inferência para média com variância populacional desconhecida
 
 ## Deseja-se investigar se uma certa moléstia que ataca o rim altera o 
 ## consumo de oxigênio desse orgão. Para indivíduos sadios, admite-se 
@@ -164,14 +162,13 @@ points(t_calculado,0, pch = 19, col = 4, cex = 1.5)
 t.test(x = consumo,
        alternative = "two.sided",
        mu = mu0, 
-       paired = FALSE, 
        conf.level = 0.99)
 
 #----------------------------------------------------------------------
 rm(list = ls())
 #----------------------------------------------------------------------
 
-# Teste de hipóteses para uma proporção
+# 03. Inferência para uma proporção
 
 ## Um antigo relatório de uma companhia afirma que 40% de toda a 
 ## água obtida por meio de poços artesianos em determinada região 
@@ -239,7 +236,7 @@ prop.test(x = sum(pocos),
 rm(list = ls())
 #----------------------------------------------------------------------
 
-# Teste de hipóteses para uma variância
+# 04. Inferência para uma variância
 
 ## Um analista da qualidade está avaliando a variabilidade do 
 ## tamanho de peças na produção de um componente. Caso a variância 
@@ -300,9 +297,7 @@ points(chi_calculado,0, pch = 19, col = 4, cex = 1.5)
 
 # Usando uma função pronta
 
-library(EnvStats)
-
-varTest(x = pecas, 
+EnvStats::varTest(x = pecas, 
         alternative = "greater", 
         sigma.squared =  2, 
         conf.level = (1 - alpha))
@@ -311,8 +306,7 @@ varTest(x = pecas,
 rm(list = ls())
 #----------------------------------------------------------------------
 
-# Teste de hipóteses para duas médias independentes com variância 
-# populacional conhecida
+# 05. Inferência para duas médias independentes com variância populacional conhecida
 
 ## Um grupo de pesquisadores conduziu um estudo para avaliar o efeito de 
 ## atividade física nos batimentos cardíacos (em minutos). Foram definidos 
@@ -403,9 +397,7 @@ points(z_calculado,0, pch = 19, col = 4, cex = 1.5)
 
 # Usando uma função pronta
 
-library(BSDA)
-
-z.test(
+BSDA::z.test(
   x = ativos,
   y = sedentarios,
   sigma.x = sigma_ativos,
@@ -419,21 +411,21 @@ z.test(
 rm(list = ls())
 #----------------------------------------------------------------------
 
-# Teste de hipóteses para duas médias independentes com variância 
+# 06. Teste de hipóteses para duas médias independentes com variância 
 # populacional desconhecida
 
 set.seed(6)
 
 #----------------------------------------------------------------------
 
-# Teste de hipóteses para duas médias independentes com variância 
+# 07. Inferência para duas médias independentes com variância 
 # populacional desconhecida mas variâncias amostrais iguais
 
 set.seed(7)
 
 #----------------------------------------------------------------------
 
-# Teste de hipóteses para diferença de médias (amostras pareadas)
+# 08. Inferência para para diferença de médias de amostras pareadas
 
 ## Um estudo tinha como objetivo avaliar o efeito de uma aula no 
 ## conhecimento dos alunos. Para isso, um grupo de alunos de uma 
@@ -513,7 +505,7 @@ t.test(x = antes,
 rm(list = ls())
 #----------------------------------------------------------------------
 
-# Teste de hipóteses para diferença de proporções
+# 09. Inferência para para diferença de proporções
 
 ## Considere uma empresa que faz vendas de produtos usando uma página web. 
 ## Algumas análises mostraram que uma determinada seção do site vem sendo 
@@ -599,7 +591,7 @@ prop.test(x = c(sum(cores1), sum(cores2)),
 rm(list = ls())
 #----------------------------------------------------------------------
 
-# Teste de hipóteses para razão de variâncias
+# 10. Inferência para razão de variâncias
 
 ## Queremos verificar se duas máquinas produzem peças com a mesma 
 ## homogeneidade quanto à resistência à tensão. Para isso, sorteamos 
@@ -681,7 +673,7 @@ var.test(maquina1,
 rm(list = ls())
 #----------------------------------------------------------------------
 
-# Teste de hipóteses para associação entre variáveis qualitativas
+# 11. Teste de hipóteses para associação entre variáveis qualitativas
 
 ## Em um estudo para verificar a relação entre crises de asma e 
 ## incidência de gripe, um grupo de crianças foi escolhido ao acaso 
@@ -744,7 +736,7 @@ chisq.test(tabela, correct = F)
 rm(list = ls())
 #----------------------------------------------------------------------
 
-# Teste de hipóteses para aderência
+# 12. Teste de hipóteses para aderência
 
 ## Um dado foi fabricado com o centro em madeira leve e cada face com 
 ## uma chapa metálica porém de diferentes características 
@@ -801,7 +793,7 @@ chisq.test(tabela, correct = F)
 rm(list = ls())
 #----------------------------------------------------------------------
 
-# Teste de hipótese para correlação (rho0 = 0)
+# 13. Teste de hipótese para correlação (rho0 = 0)
 
 ## Uma empresa que fabrica automóveis está fazendo testes em um modelo 
 ## para avaliar modificações a serem feitas na próxima geração. Havia uma 
@@ -880,7 +872,7 @@ cor.test(consumo, km,
 rm(list = ls())
 #----------------------------------------------------------------------
 
-# Teste de hipótese para correlação (rho0 != 0)
+# 14. Teste de hipótese para correlação (rho0 != 0)
 
 ## Em uma indústria é realizado um curso de treinamento após 1 ano de 
 ## admissão dos operários. Historicamente, o coeficiente de correlação 
